@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/surface"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageButton
+            android:id="@+id/recordButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/record_selector"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <ImageButton
+            android:id="@+id/switchCamera"
+
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/camera_white"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+        <TextView
+            android:id="@+id/recordModeButton"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_above="@id/recordButton"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="-31dp"
+            android:background="@drawable/rounded_corners"
+            android:clickable="true"
+            android:elegantTextHeight="true"
+            android:fadingEdgeLength="32dp"
+            android:requiresFadingEdge="horizontal"
+            android:text="  Record  "
+            android:textAlignment="center"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/screenshotModeButton"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_above="@id/recordButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="-31dp"
+            android:background="@drawable/rounded_corners"
+            android:clickable="true"
+            android:elegantTextHeight="true"
+            android:fadingEdgeLength="56dp"
+            android:requiresFadingEdge="vertical"
+            android:text="  Screenshot  "
+            android:textAlignment="center"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:id="@+id/buttonCollection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="85dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/whiteBrush"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/whitecircle"
+                android:text="Button"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/greyBrush"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/greycircle"
+                android:text="Button"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/blackBrush"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/blackcircle"
+                android:text="Button"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/orangeBrush"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/orangecircle"
+                android:text="Button"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/greenBrush"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/greencircle"
+                android:text="Button"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/blueBrush"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/bluecircle"
+                android:text="Button"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <Space
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <ImageButton
+                android:id="@+id/eraser"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/erasercircle"
+                android:text="Button"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/clearPainting"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/trashcircle"
+                android:text="Button"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/brushSizeBar"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="55dp"
+            android:max="10000"
+            android:progress="1225"
+            android:thumbTint="@android:color/black"
+            android:progressTint="#808080" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
