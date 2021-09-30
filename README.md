@@ -1,4 +1,4 @@
-# facePainting-android-java
+# facepaint-android-java
 
 To learn more about the face paint in DeepAR SDK, see our article https://help.deepar.ai/en/articles/5608765-face-painting-effect-tutorial
 
